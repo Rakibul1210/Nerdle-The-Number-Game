@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1645361241 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
+	<bits/stdc++.h>
+
+1645360811 source:f:\semester03\305_software_project_lab\spl1\main.cpp
+	<bits/stdc++.h>
+	"header.h"
+
+1645360781 f:\semester03\305_software_project_lab\spl1\header.h
+
