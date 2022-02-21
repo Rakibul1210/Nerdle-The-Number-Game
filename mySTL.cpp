@@ -1,76 +1,45 @@
+#include "header.h"
 
-#include <bits/stdc++.h>
+#include "mySTL.h"
+
 
 using namespace std;
 
-typedef struct node Node;
-
-struct node{
-    int data;   //contains the value or data
-    Node *next; //reference to the next node
-};
 
 
-//Linked List functions...
-Node *create_node(Node *next,int value);
 
-//Stack creating functions...
-Node *createLinkedList(Node *head);
-// Node adding function
-Node *addNewNode(Node *head, int value);
-
-//Node removing function...
-Node *removeNode(Node *head);
-
-Node *create_node(Node *next,int value)
-{
-    Node *new_node;
-    new_node = (Node *) malloc(sizeof(node));
-    if(new_node == NULL)
-    {
-        cout<<"Error creating node."<<endl;
-        exit(1);
-    }
-
-    new_node->data = value;
-    new_node->next = next;
-
-    return new_node;
-
+void MY_STACK :: stackPush(int n){
+        if(top >= MAX_SIZE_STACK){
+            cout<<"\aSTACK OVERFLOW"<<endl;
+            return;
+        }
+        arr[top++] = n;
 }
-Node *createLinkedList(Node *head)
-{
-    Node *new_node;
-
-    new_node = create_node(NULL, -1);
-    new_node->next = NULL;
-
-    return new_node;
-
-}
-
-Node *addNewNode(Node *head, int value)
-{
-    Node *new_node;
-
-    new_node = create_node(NULL, value);
-    new_node->next = head;
-
-    //new_node = create_node(head, value);
-
-    return new_node;
-
-}
-
-Node *removeNode(Node *head, Node *node_to_be_removed)
-{
-    if(head == node_to_be_removed)
-    {
-        head = node_to_be_removed->next;
-        free(node_to_be_removed);
-        return head;
-    }
-
+int MY_STACK :: stackPop(){
+        if(top <= 0){
+            cout<<"\aSTACK UNDERFLOW"<<endl;
+            return -1;
+        }
+        return arr[--top];
 }
 
 
+//
+//typedef struct INT_STACK IntStack;
+//typedef struct CHAR_STACK CharStack;
+//
+//struct INT_STACK{
+//    int int_stack[100];
+//    int top=-1;
+//};
+//
+//struct CHAR_STACK{
+//    char int_stack[100];
+//    int top=-1;
+//};
+//
+//
+//
+//void pushStack(IntStack s,int n){
+//    if( )
+//}

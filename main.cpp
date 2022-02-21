@@ -1,15 +1,17 @@
-#include <bits/stdc++.h>
+
 #include "header.h"
 
-using namespace std;
+
 
 int main()
 {
-    char *equation;
+//    char *equation;
+//
+//    equation = generateRandomEquation();
+//    cout<<equation<<endl;
 
-    equation = generateRandomEquation();
-    cout<<equation<<endl;
 
+    temp();
     return 0;
 
 }

@@ -38,6 +38,8 @@
 		<Unit filename="infixToPostfix.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="mySTL.cpp" />
+		<Unit filename="mySTL.h" />
+		<Unit filename="temp.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -2,9 +2,22 @@
 1645361241 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
 	<bits/stdc++.h>
 
-1645360811 source:f:\semester03\305_software_project_lab\spl1\main.cpp
-	<bits/stdc++.h>
+1645435560 source:f:\semester03\305_software_project_lab\spl1\main.cpp
 	"header.h"
 
-1645360781 f:\semester03\305_software_project_lab\spl1\header.h
+1645435560 f:\semester03\305_software_project_lab\spl1\header.h
+	<bits/stdc++.h>
+
+1645435490 source:f:\semester03\305_software_project_lab\spl1\infixtopostfix.cpp
+
+1645437777 source:f:\semester03\305_software_project_lab\spl1\mystl.cpp
+	"header.h"
+	"mySTL.h"
+
+1645437606 f:\semester03\305_software_project_lab\spl1\mystl.h
+	"header.h"
+
+1645437713 source:f:\semester03\305_software_project_lab\spl1\temp.cpp
+	"header.h"
+	"mySTL.h"
 
