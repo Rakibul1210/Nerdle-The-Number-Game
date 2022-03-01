@@ -16,6 +16,8 @@ void infixToPostfix(char* infix,char *postfix)
     //  Scanning the infix expression from left to right...
     for(int i = 0; i < n ; i++)
     {
+        if(infix[i] == ' ')
+            continue;
         if( isNumber(infix[i]) )
         {
             while( isNumber(infix[i]) ) // taking multi-digit number until space or operator is found
@@ -45,10 +47,7 @@ void infixToPostfix(char* infix,char *postfix)
                 postfix[pl++] = ch;
                 postfix[pl++] = ' ';
                 ch = s.stackPop();
-
-
             }
-
         }
         else // else take care of operators
         {
@@ -71,7 +70,7 @@ void infixToPostfix(char* infix,char *postfix)
                 s.stackPush(infix[i]);
             }
         }
-    // Nothing just diplaying the stack simulation...
+    // Nothing just displaying the stack simulation...
 //    postfix[pl] = '\0';
 //    cout<<"postfix: "<<postfix<<endl;
 //    s.printStack();

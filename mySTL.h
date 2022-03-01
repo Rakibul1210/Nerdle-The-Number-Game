@@ -9,7 +9,19 @@ class MY_STACK
         int top=0;
 
     public:
-        void stackPush(int n);
+        void stackPush(char n);
         char stackPop();
+        void printStack();
+};
+
+class MY_INT_STACK
+{
+    private:
+        int arr[100];
+        int top=0;
+
+    public:
+        void stackPush(int n);
+        int stackPop();
         void printStack();
 };

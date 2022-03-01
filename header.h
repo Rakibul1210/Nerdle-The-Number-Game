@@ -8,6 +8,8 @@ char* generateRandomEquation();
 
 void infixToPostfix(char* infix,char *postfix);
 int checkPrecendence(char ch);
+int calcultaeEquation(char* equation);
+
 
 
 // My stack functions

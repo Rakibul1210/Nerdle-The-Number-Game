@@ -3,10 +3,12 @@
 using namespace std;
 
 char* generateRandomEquation(){
-    char *equation = new char[1];
+    char *equation= new char[1];
     freopen("Equation.txt","r", stdin);
-    cin>>equation;
+    gets(equation);
+    //cin>>equation;
     cout<<equation<<endl;
+    //exit(1);
     return equation;
 
 
