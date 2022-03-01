@@ -1,111 +1,108 @@
-//#include "header.h"
-//
-//char* toPostfix(char*infix)
-//{
-//    int i,n;
-//    char ch;
-//    char  *postfix;
-//
-//
-//    //  Scanning the infix expression from left to right...
-//    for(i=0;i<n;i++)
-//    {
-//        if(infix[i]==' ')   //  ignoring spaces
-//            continue;
-//
-//        if(isalnum(infix[i]))
-//        {
-//            while(isalnum(infix[i])) // taking multi-digit number until space or operator is found
-//            {
-//                postfix+=infix[i];
-//                i++;
-//            }
-//            i--;
-//            postfix+=" ";       //  adding space
-//
-//        }
-//        else if(infix[i] == '(') // Pushing left parenthesis to the stack
-//        {
-//            pushStack(infix[i]);
-//        }
-//
-//        //  If right parenthesis is found
-//        //  Repeatedly popping form the stack until '(' is found
-//        else if(infix[i] == ')')
-//        {
-//            char ch;
-//            ch=popStack();
-//            while(ch != -1 && ch!='(')
-//            {
-//                postfix+=ch;
-//                postfix+=" ";
-//                ch=popStack();
-//            }
-//
-//        }
-//        else // else take care of operators
-//        {
-//            ch=popStack();
-//            //  Repeatedly popping operators which has higher or same precedence than new one
-//            if(checkPrecendence(infix[i]) < checkPrecendence(ch)) //
-//            {
-//                while((checkPrecendence(infix[i]) <= checkPrecendence(ch)) && (ch != -1))
-//                {
-//                    postfix+=ch;
-//                    postfix+=+" ";
-//                    ch=popStack();
-//                }
-//                pushStack(infix[i]);
-//            }
-//            else        // if new operator has lower precedence simply push it to stack
-//            {
-//                pushStack(ch);
-//                pushStack(infix[i]);
-//            }
-//        }
-//// Nothing just diplaying the stack simulation...
-//#ifdef POSTFIX_STACK
-//int j;
-//cout<<"\t";
-//cout<<infix[i]<<"\t";
-//for(j=0;j<=top;j++)
-//{
-//    cout<<Stack[j]<<" ";
-//}
-//    for(;j<6;j++)
-//    {
-//        cout<<"  ";
-//    }
-//    cout<<postfix<<endl;
-//    cout<<endl;
-//#endif // POSTFIX_STACK
-//    }
-//
-//    //  Repeatedly popping the stack and adding to POSTFIX until stack is empty
-//    ch=popStack();
-//    while(ch != -1)
-//    {
-//        postfix+=ch;
-//        postfix+=+" ";
-//
-//#ifdef POSTFIX_STACK
-//int j;
-//cout<<infix[i]<<"\t";
-//for(j=0;j<=top;j++)
-//{
-//    cout<<Stack[j]<<" ";
-//}
-//    for(;j<6;j++)
-//    {
-//        cout<<"  ";
-//    }
-//    cout<<postfix<<endl;
-//    cout<<endl;
-//#endif // POSTFIX_STACK
-//
-//        ch=popStack();
-//
-//    }
-//
-//    return postfix;
-//}
+#include "header.h"
+#include "mySTL.h"
+#define POSTFIX_STACK
+
+void infixToPostfix(char* infix,char *postfix)
+{
+    int n,pl=0;
+    char ch;
+    //char  postfix[100];
+
+    MY_STACK s;
+
+    n = stringLength (infix);
+    //cout<<"String Length: "<<n<<endl;
+
+    //  Scanning the infix expression from left to right...
+    for(int i = 0; i < n ; i++)
+    {
+        if( isNumber(infix[i]) )
+        {
+            while( isNumber(infix[i]) ) // taking multi-digit number until space or operator is found
+            {
+                postfix[pl++] = infix[i];
+                i++;
+            }
+            i--;
+            postfix[pl++] = ' ';       //  adding space
+
+        }
+        else if(infix[i] == '(') // Pushing left parenthesis to the stack
+        {
+            s.stackPush(infix[i]);
+
+        }
+
+        //  If right parenthesis is found
+        //  Repeatedly popping form the stack until '(' is found
+        else if( infix[i] == ')' )
+        {
+            char ch;
+            ch = s.stackPop();
+            //ch=s.stackPop();
+            while(ch != -1 && ch!='(')
+            {
+                postfix[pl++] = ch;
+                postfix[pl++] = ' ';
+                ch = s.stackPop();
+
+
+            }
+
+        }
+        else // else take care of operators
+        {
+            //ch=s.stackPop();
+            ch = s.stackPop();
+            //  Repeatedly popping operators which has higher or same precedence than new one
+            if(checkPrecendence(infix[i]) < checkPrecendence(ch)) //
+            {
+                while((checkPrecendence(infix[i]) <= checkPrecendence(ch)) && (ch != -1))
+                {
+                    postfix[pl++] = ch;
+                    postfix[pl++] = ' ';
+                    ch=s.stackPop();
+                }
+                s.stackPush(infix[i]);
+            }
+            else        // if new operator has lower precedence simply push it to stack
+            {
+                s.stackPush(ch);
+                s.stackPush(infix[i]);
+            }
+        }
+    // Nothing just diplaying the stack simulation...
+//    postfix[pl] = '\0';
+//    cout<<"postfix: "<<postfix<<endl;
+//    s.printStack();
+
+    }
+
+    //  Repeatedly popping the stack and adding to POSTFIX until stack is empty
+    ch=s.stackPop();
+    while(ch != -1)
+    {
+        postfix[pl++] = ch;
+        postfix[pl++] = ' ';
+
+        ch=s.stackPop();
+
+    }
+    postfix[pl] = '\0';
+//    cout<<"Postfix: "<<postfix<<endl;
+    //return postfix;
+}
+
+//      Checking Level of plus,minus,multiple,division & power....
+int checkPrecendence(char ch)
+{
+    if(ch == '^')
+        return 3;
+    else if(ch == '*' || ch == '/')
+        return 2;
+    else if(ch == '+' || ch == '-')
+        return 1;
+    else
+        return -1;
+}
+

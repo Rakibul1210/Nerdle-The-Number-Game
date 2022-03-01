@@ -15,31 +15,19 @@ void MY_STACK :: stackPush(int n){
         }
         arr[top++] = n;
 }
-int MY_STACK :: stackPop(){
+
+char MY_STACK :: stackPop(){
         if(top <= 0){
-            cout<<"\aSTACK UNDERFLOW"<<endl;
+            //cout<<"\aSTACK UNDERFLOW"<<endl;
             return -1;
         }
         return arr[--top];
+
 }
-
-
-//
-//typedef struct INT_STACK IntStack;
-//typedef struct CHAR_STACK CharStack;
-//
-//struct INT_STACK{
-//    int int_stack[100];
-//    int top=-1;
-//};
-//
-//struct CHAR_STACK{
-//    char int_stack[100];
-//    int top=-1;
-//};
-//
-//
-//
-//void pushStack(IntStack s,int n){
-//    if( )
-//}
+void MY_STACK :: printStack(){
+    cout<<"stack: ";
+    for(int i=0;i<top;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}

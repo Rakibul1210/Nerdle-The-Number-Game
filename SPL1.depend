@@ -1,23 +1,28 @@
 # depslib dependency file v1.0
-1645361241 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
+1646124517 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
 	<bits/stdc++.h>
 
-1645435560 source:f:\semester03\305_software_project_lab\spl1\main.cpp
+1646131894 source:f:\semester03\305_software_project_lab\spl1\main.cpp
 	"header.h"
 
-1645435560 f:\semester03\305_software_project_lab\spl1\header.h
+1646131715 f:\semester03\305_software_project_lab\spl1\header.h
 	<bits/stdc++.h>
 
-1645435490 source:f:\semester03\305_software_project_lab\spl1\infixtopostfix.cpp
-
-1645437777 source:f:\semester03\305_software_project_lab\spl1\mystl.cpp
+1646131908 source:f:\semester03\305_software_project_lab\spl1\infixtopostfix.cpp
 	"header.h"
 	"mySTL.h"
 
-1645437606 f:\semester03\305_software_project_lab\spl1\mystl.h
-	"header.h"
-
-1645437713 source:f:\semester03\305_software_project_lab\spl1\temp.cpp
+1646131089 source:f:\semester03\305_software_project_lab\spl1\mystl.cpp
 	"header.h"
 	"mySTL.h"
+
+1646127714 f:\semester03\305_software_project_lab\spl1\mystl.h
+	"header.h"
+
+1646130941 source:f:\semester03\305_software_project_lab\spl1\temp.cpp
+	"header.h"
+	"mySTL.h"
+
+1646125094 source:f:\semester03\305_software_project_lab\spl1\additionalfunctions.cpp
+	"header.h"
 

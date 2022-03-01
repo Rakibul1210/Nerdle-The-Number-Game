@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Equation.txt" />
+		<Unit filename="additionalFunctions.cpp" />
 		<Unit filename="generateRandomEquation.cpp" />
 		<Unit filename="header.h" />
 		<Unit filename="infixToPostfix.cpp" />

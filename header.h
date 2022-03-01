@@ -4,15 +4,19 @@ using namespace std;
 
 #pragma once
 
-char *generateRandomEquation();
+char* generateRandomEquation();
 
-char* toPostfix(char*infix);
+void infixToPostfix(char* infix,char *postfix);
+int checkPrecendence(char ch);
 
+
+// My stack functions
 void pushStack(int n);
 int popStack();
 void pushStack(char ch);
 char popSack();
 
-
-
+// Additional Functions
+int stringLength(char* str);
+bool isNumber(char ch);
 void temp();

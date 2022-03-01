@@ -4,11 +4,12 @@
 
 class MY_STACK
 {
-private:
-    int arr[100];
-    int top=0;
+    private:
+        char arr[100];
+        int top=0;
 
-public:
-    void stackPush(int n);
-    int stackPop();
+    public:
+        void stackPush(int n);
+        char stackPop();
+        void printStack();
 };
