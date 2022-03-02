@@ -23,4 +23,6 @@ int stringLength(char* str);
 bool isNumber(char ch);
 void temp();
 
+
+bool checkAnswer(char *equation, char *player_input);
 char *getInput();

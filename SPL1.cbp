@@ -35,7 +35,9 @@
 		<Unit filename="Equation.txt" />
 		<Unit filename="additionalFunctions.cpp" />
 		<Unit filename="calculateValue.cpp" />
+		<Unit filename="checkAnswer&amp;GiveHint.cpp" />
 		<Unit filename="generateRandomEquation.cpp" />
+		<Unit filename="getInput.cpp" />
 		<Unit filename="header.h" />
 		<Unit filename="infixToPostfix.cpp" />
 		<Unit filename="main.cpp" />

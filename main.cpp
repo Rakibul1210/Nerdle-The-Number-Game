@@ -3,39 +3,59 @@
 
 int main()
 {
-    char *infix,*postfix = new char[1];
+    char *infix_equation,*postfix_equation = new char[1];
     int length;
 
-    infix = generateRandomEquation();
-    //cout<<"Infix: "<<infix<<endl;
+    infix_equation = generateRandomEquation();
+    //cout<<"infix_equation: "<<infix_equation<<endl;
 
-    postfix = infixToPostfix(infix);
-    //cout<<"postfix: "<<postfix<<endl;
-    int answer = calculateValue(postfix);
+    postfix_equation = infixToPostfix(infix_equation);
+    //cout<<"postfix_equation: "<<postfix_equation<<endl;
+    int answer = calculateValue(postfix_equation);
     cout<<"\tAnswer: "<<answer<<endl;
-    length = stringLength(infix);
+    length = stringLength(infix_equation);
     cout<<"\tString Length: "<<length<<endl;
     int no_of_guess= 1;
-    char *input;
+    char *player_input;
 
 
-    do{
+    while(no_of_guess <7)
+    {
         cout<<endl<<"\tEnter your Guess_"<<no_of_guess<<": ";
-        input = getInput();
-        input = infixToPostfix(input);
+        player_input = getInput();
 
-        if(calculateValue(input) == answer){
-        }
-        else{
-            cout<<"\tThe Guess Doesn't Compute."<<endl;
+        //player_input = infixToPostfix(player_input);
+
+       // cout<<stringLength(player_input)<<" "<<stringLength(infix_equation)<<endl;
+
+        if(stringLength(player_input) != stringLength(infix_equation))
+        {
+            cout<<"\tMinimum String Length "<<stringLength(infix_equation)<<" required."<<endl;
             continue;
         }
-        no_of_guess++;
-    }while(no_of_guess <= 6);
+        else
+        {
+
+            if( calculateValue( infixToPostfix(player_input) ) != answer)
+            {
+                cout<<"The Guess doesn't compute "<<answer<<endl;
+                continue;
+            }
+            else
+            {
+                if(checkAnswer(infix_equation,player_input))
+                {
+                    cout<<"\tCONGRATULATIONS!!!"<<endl; //Game won....
+                    break;
+                }
+
+                no_of_guess++;
+            }
+        }
+    }
 
 
 
-//    temp();
     return 0;
 
 }
