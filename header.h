@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
-
+#include <fstream>
 using namespace std;
 
 #pragma once
 
 char* generateRandomEquation();
 
-void infixToPostfix(char* infix,char *postfix);
+char* infixToPostfix(char* infix);
 int checkPrecendence(char ch);
-int calcultaeEquation(char* equation);
+int calculateValue(char* equation);
 
 
 
@@ -22,3 +22,5 @@ char popSack();
 int stringLength(char* str);
 bool isNumber(char ch);
 void temp();
+
+char *getInput();

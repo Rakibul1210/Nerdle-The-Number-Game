@@ -1,7 +1,7 @@
 #include "header.h"
 #include "mySTL.h"
 
-int calcultaeEquation(char* equation)
+int calculateValue(char* equation)
 {
     int number;
     int n=stringLength(equation);
@@ -54,7 +54,7 @@ int calcultaeEquation(char* equation)
         }
 
         // checking stack status
-        s.printStack();
+        //s.printStack();
     }
     return s.stackPop();
 }

@@ -2,11 +2,11 @@
 #include "mySTL.h"
 #define POSTFIX_STACK
 
-void infixToPostfix(char* infix,char *postfix)
+char *infixToPostfix(char* infix)
 {
     int n,pl=0;
     char ch;
-    //char  postfix[100];
+    char *postfix = new char[1];
 
     MY_STACK s;
 
@@ -88,8 +88,9 @@ void infixToPostfix(char* infix,char *postfix)
 
     }
     postfix[pl] = '\0';
-//    cout<<"Postfix: "<<postfix<<endl;
-    //return postfix;
+    //cout<<"Postfix: "<<postfix<<endl;
+    return postfix;
+
 }
 
 //      Checking Level of plus,minus,multiple,division & power....
