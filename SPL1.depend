@@ -2,10 +2,10 @@
 1646195339 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
 	"header.h"
 
-1646220971 source:f:\semester03\305_software_project_lab\spl1\main.cpp
+1646384786 source:f:\semester03\305_software_project_lab\spl1\main.cpp
 	"header.h"
 
-1646249301 f:\semester03\305_software_project_lab\spl1\header.h
+1646384786 f:\semester03\305_software_project_lab\spl1\header.h
 	<bits/stdc++.h>
 	<fstream>
 	<graphics.h>
@@ -21,7 +21,7 @@
 1646146380 f:\semester03\305_software_project_lab\spl1\mystl.h
 	"header.h"
 
-1646130941 source:f:\semester03\305_software_project_lab\spl1\temp.cpp
+1646249301 source:f:\semester03\305_software_project_lab\spl1\temp.cpp
 	"header.h"
 	"mySTL.h"
 

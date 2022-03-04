@@ -28,3 +28,7 @@ void temp();
 
 bool checkAnswer(char *equation, char *player_input);
 char *getInput();
+
+
+void gamePage();
+
