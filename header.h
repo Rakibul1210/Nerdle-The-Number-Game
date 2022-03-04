@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 #include <fstream>
+#include <graphics.h>
+
 using namespace std;
 
 #pragma once

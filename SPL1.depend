@@ -2,12 +2,13 @@
 1646195339 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
 	"header.h"
 
-1646220818 source:f:\semester03\305_software_project_lab\spl1\main.cpp
+1646220971 source:f:\semester03\305_software_project_lab\spl1\main.cpp
 	"header.h"
 
-1646220682 f:\semester03\305_software_project_lab\spl1\header.h
+1646249301 f:\semester03\305_software_project_lab\spl1\header.h
 	<bits/stdc++.h>
 	<fstream>
+	<graphics.h>
 
 1646196095 source:f:\semester03\305_software_project_lab\spl1\infixtopostfix.cpp
 	"header.h"
@@ -34,6 +35,6 @@
 1646194771 source:f:\semester03\305_software_project_lab\spl1\getinput.cpp
 	"header.h"
 
-1646220697 source:f:\semester03\305_software_project_lab\spl1\checkanswer&givehint.cpp
+1646239501 source:f:\semester03\305_software_project_lab\spl1\checkanswer&givehint.cpp
 	"header.h"
 

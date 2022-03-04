@@ -6,6 +6,7 @@
 void temp(){
 
 
+    arc(200,200,0,150,50);
     cout<<"voila"<<endl;
 
 }

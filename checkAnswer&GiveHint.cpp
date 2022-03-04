@@ -3,7 +3,7 @@
 bool checkAnswer(char *equation, char *player_input){
     bool correct_guess = true;
     int n = stringLength(equation);
-    cout<<"\t\t\t";
+    cout<<"\t\t\t    ";
     for(int i=0;i<n;i++)
     {
         if(player_input[i] == equation[i])
