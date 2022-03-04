@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include <fstream>
 #include <graphics.h>
+#include <string>
 
 using namespace std;
 
@@ -24,6 +25,9 @@ char popSack();
 int stringLength(char* str);
 bool isNumber(char ch);
 void temp();
+void numToString(int num);
+
+char checkMouseClick(int x,int y);
 
 
 bool checkAnswer(char *equation, char *player_input);

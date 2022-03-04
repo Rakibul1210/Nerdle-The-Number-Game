@@ -3,13 +3,16 @@
 
 int main()
 {
-    gamePage();
+
+
     char *infix_equation,*postfix_equation = new char[1];
+    //infix_equation = getInput();
+    cout<<"infix_equation: "<<infix_equation<<endl;
     int length;
 
-    infix_equation = generateRandomEquation();
-    //cout<<"infix_equation: "<<infix_equation<<endl;
-
+//    infix_equation = generateRandomEquation();
+//    //cout<<"infix_equation: "<<infix_equation<<endl;
+//
     postfix_equation = infixToPostfix(infix_equation);
     //cout<<"postfix_equation: "<<postfix_equation<<endl;
     int answer = calculateValue(postfix_equation);
@@ -19,6 +22,7 @@ int main()
     int no_of_guess= 1;
     char *player_input;
 
+    gamePage(answer);
 
     while(no_of_guess <7)
     {
@@ -55,7 +59,7 @@ int main()
         }
     }
 
-    temp();
+    //temp();
 
     return 0;
 
