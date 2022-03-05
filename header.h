@@ -25,14 +25,15 @@ char popSack();
 int stringLength(char* str);
 bool isNumber(char ch);
 void temp();
-void numToString(int num);
+char *numToString(int num);
 
 char checkMouseClick(int x,int y);
 
 
 bool checkAnswer(char *equation, char *player_input);
 char *getInput();
+char *getInputFromGamPage();
 
 
-void gamePage();
+void gamePage(int answer);
 

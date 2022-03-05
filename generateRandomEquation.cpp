@@ -11,9 +11,7 @@ char* generateRandomEquation(){
     if(input_file.is_open()){
         input_file>>equation;
     }
-    //fgets(equation);
 
-    //cout<<equation<<endl;
 
     return equation;
 

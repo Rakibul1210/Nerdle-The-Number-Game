@@ -4,38 +4,42 @@
 int main()
 {
 
-
     char *infix_equation,*postfix_equation = new char[1];
-    //infix_equation = getInput();
-    cout<<"infix_equation: "<<infix_equation<<endl;
     int length;
 
-//    infix_equation = generateRandomEquation();
-//    //cout<<"infix_equation: "<<infix_equation<<endl;
-//
+    infix_equation = generateRandomEquation();
+    //cout<<"infix_equation: "<<infix_equation<<endl;
+
     postfix_equation = infixToPostfix(infix_equation);
     //cout<<"postfix_equation: "<<postfix_equation<<endl;
+
     int answer = calculateValue(postfix_equation);
     cout<<"\tAnswer: "<<answer<<endl;
+
     length = stringLength(infix_equation);
     cout<<"\tString Length: "<<length<<endl;
+
     int no_of_guess= 1;
     char *player_input;
+    bool game_won = false;
 
-    gamePage(answer);
+    //graphics...............................
+    //gamePage(answer);
 
     while(no_of_guess <7)
     {
+
+        cout<<endl;
         cout<<endl<<"\tEnter your Guess_"<<no_of_guess<<": ";
         player_input = getInput();
 
         //player_input = infixToPostfix(player_input);
 
-       // cout<<stringLength(player_input)<<" "<<stringLength(infix_equation)<<endl;
+        //cout<<stringLength(player_input)<<" "<<stringLength(infix_equation)<<endl;
 
         if(stringLength(player_input) != stringLength(infix_equation))
         {
-            cout<<"\tMinimum String Length "<<stringLength(infix_equation)<<" required."<<endl;
+            cout<<"\tString Length Must be "<<stringLength(infix_equation)<<endl;
             continue;
         }
         else
@@ -43,20 +47,28 @@ int main()
 
             if( calculateValue( infixToPostfix(player_input) ) != answer)
             {
-                cout<<"The Guess doesn't compute "<<answer<<endl;
+                cout<<"\t!!The Guess doesn't compute "<<answer<<endl;
                 continue;
             }
             else
             {
                 if(checkAnswer(infix_equation,player_input))
                 {
-                    cout<<"\tCONGRATULATIONS!!!"<<endl; //Game won....
+                    game_won = true;
+                    cout<<endl;
+                    cout<<"\tCONGRATULATIONS!! "<<endl; //Game won....
+                    cout<<"\tYOU WON"<<endl;
                     break;
                 }
 
                 no_of_guess++;
             }
         }
+    }
+    if(!game_won )
+    {
+        cout<<"\tYOU LOST!!!"<<endl;
+        cout<<"\tCorrect answer: "<<infix_equation<<endl;
     }
 
     //temp();

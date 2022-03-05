@@ -8,12 +8,12 @@ char *infixToPostfix(char* infix)
     char ch;
     char *postfix = new char[1];
 
+    // User defined Stack : MY_STACK
     MY_STACK s;
 
+    // User defined string length function : int stringLength(char *str)
     n = stringLength (infix);
-    //cout<<"String Length: "<<n<<endl;
 
-    //  Scanning the infix expression from left to right...
     for(int i = 0; i < n ; i++)
     {
         if(infix[i] == ' ')
@@ -70,10 +70,6 @@ char *infixToPostfix(char* infix)
                 s.stackPush(infix[i]);
             }
         }
-    // Nothing just displaying the stack simulation...
-//    postfix[pl] = '\0';
-//    cout<<"postfix: "<<postfix<<endl;
-//    s.printStack();
 
     }
 

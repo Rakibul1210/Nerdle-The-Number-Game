@@ -1,7 +1,29 @@
 #include "header.h"
 
 
-char *getInput(){
+char *getInput()
+{
+    char *input = new char [1];
+    int length=0;
+    char ch='0';
+    while(ch != 10)
+    {
+        cin.get(ch);
+        if(ch != ' ' && ch != 10)
+        {
+                input[length++] = ch;
+        }
+    }
+    input[length] = '\0';
+
+    cout<<endl;
+
+    return input;
+
+}
+
+
+char *getInputFromGamPage(){
     char *input = new char[1];
     int length=0;
 //    cin>>input;
@@ -44,14 +66,18 @@ char *getInput(){
                                 cout<<"DELETE: ";
                                 cout<<i<<" "<<length<<" - > ";
                                 i = i-70;
+                                setcolor(RED);
+                                setfillstyle(SOLID_FILL,RED);
+                                rectangle(450+i,60,510+i,120);
+                                floodfill(451+i,71,RED);
+                                length--;
+                                cout<<i<<" "<<length<<endl;
+
                                 setcolor(WHITE);
                                 setfillstyle(SOLID_FILL,WHITE);
                                 rectangle(450+i,60,510+i,120);
                                 floodfill(451+i,71,WHITE);
-                                length--;
-                                cout<<i<<" "<<length<<endl;
                                 i = i-70;
-
                                 break;
                             }
                             //delete last element...

@@ -27,15 +27,12 @@ int calculateValue(char* equation)
         }
         else//else takes care of operators in postfix expression...
         {
-
-
             //  Popping back last two number for performing operations..
             int b = s.stackPop();
             int a = s.stackPop();
 
             // Checking operator one by one..
             // Then Pushing their operated value
-
             if(equation[i] == '+')
                 s.stackPush(a+b);
 
@@ -52,9 +49,7 @@ int calculateValue(char* equation)
                 s.stackPush(pow(a,b));
 
         }
-
-        // checking stack status
-        //s.printStack();
     }
+
     return s.stackPop();
 }

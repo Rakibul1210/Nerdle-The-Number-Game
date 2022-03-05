@@ -6,6 +6,7 @@ bool checkAnswer(char *equation, char *player_input){
     cout<<"\t\t\t    ";
     for(int i=0;i<n;i++)
     {
+        //delay(500);
         if(player_input[i] == equation[i])
         {
             cout<<"G";

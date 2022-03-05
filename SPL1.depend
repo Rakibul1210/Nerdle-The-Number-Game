@@ -1,17 +1,17 @@
 # depslib dependency file v1.0
-1646195339 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
+1646458413 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
 	"header.h"
 
-1646433787 source:f:\semester03\305_software_project_lab\spl1\main.cpp
+1646480134 source:f:\semester03\305_software_project_lab\spl1\main.cpp
 	"header.h"
 
-1646436389 f:\semester03\305_software_project_lab\spl1\header.h
+1646461142 f:\semester03\305_software_project_lab\spl1\header.h
 	<bits/stdc++.h>
 	<fstream>
 	<graphics.h>
 	<string>
 
-1646196095 source:f:\semester03\305_software_project_lab\spl1\infixtopostfix.cpp
+1646478089 source:f:\semester03\305_software_project_lab\spl1\infixtopostfix.cpp
 	"header.h"
 	"mySTL.h"
 
@@ -26,19 +26,19 @@
 	"header.h"
 	"mySTL.h"
 
-1646146227 source:f:\semester03\305_software_project_lab\spl1\additionalfunctions.cpp
+1646478089 source:f:\semester03\305_software_project_lab\spl1\additionalfunctions.cpp
 	"header.h"
 
-1646195939 source:f:\semester03\305_software_project_lab\spl1\calculatevalue.cpp
+1646478089 source:f:\semester03\305_software_project_lab\spl1\calculatevalue.cpp
 	"header.h"
 	"mySTL.h"
 
-1646435119 source:f:\semester03\305_software_project_lab\spl1\getinput.cpp
+1646478089 source:f:\semester03\305_software_project_lab\spl1\getinput.cpp
 	"header.h"
 
-1646239501 source:f:\semester03\305_software_project_lab\spl1\checkanswer&givehint.cpp
+1646480134 source:f:\semester03\305_software_project_lab\spl1\checkanswer&givehint.cpp
 	"header.h"
 
-1646432663 source:f:\semester03\305_software_project_lab\spl1\gamepage.cpp
+1646437496 source:f:\semester03\305_software_project_lab\spl1\gamepage.cpp
 	"header.h"
 

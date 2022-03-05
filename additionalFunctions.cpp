@@ -1,6 +1,7 @@
 #include "header.h"
 
 int stringLength(char* str){
+
     int length=0;
     while(*str){
         length++;
@@ -17,7 +18,7 @@ bool isNumber(char ch){
         return false;
 }
 
-void numToString(int num)
+char* numToString(int num)
 {
     char *str = new char[1];
 
@@ -41,5 +42,8 @@ void numToString(int num)
         str[i] = '0';
     }
     str[i] = '\0';
+
+    strrev(str);
+
     return str;
 }

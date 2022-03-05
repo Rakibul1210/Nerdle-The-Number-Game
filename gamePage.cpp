@@ -15,17 +15,22 @@ void gamePage(int answer)
     cleardevice();
 
     // Game title
-    char name[] = "Nerdle - The Number Game";
-    settextstyle(10,0,2);
-    setcolor(YELLOW);
-    outtextxy(580,8,name);
+//    char name[] = "Nerdle - The Number Game";
+//    settextstyle(10,0,2);
+//    setcolor(YELLOW);
+//    outtextxy(580,8,name);
 
     //printing answer
-    symbol = numToString(answer);
-
-    setcolor(YELLOW);
+    ans = "Answer: ";
+    setcolor(WHITE);
     settextstyle(10,0,5);
-    outtextxy(463+i,565,symbol);
+    outtextxy(580,8,ans);
+
+    ans = numToString(answer);
+    cout<<ans<<endl;
+    setcolor(WHITE);
+    settextstyle(10,0,5);
+    outtextxy(780,8,ans);
 
 
     for(int i=0;i<351;i = i+70)
@@ -94,14 +99,6 @@ void gamePage(int answer)
     rectangle(835,620,940,670);
     char enter[] = "Enter";
     outtextxy(858,635,enter);
-
-
-
-
-
-
-
-
 
 
     //getch();
