@@ -1,15 +1,17 @@
 # depslib dependency file v1.0
-1646458413 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
+1646477862 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
 	"header.h"
 
-1646480134 source:f:\semester03\305_software_project_lab\spl1\main.cpp
+1646480422 source:f:\semester03\305_software_project_lab\spl1\main.cpp
 	"header.h"
 
-1646461142 f:\semester03\305_software_project_lab\spl1\header.h
+1646474561 f:\semester03\305_software_project_lab\spl1\header.h
 	<bits/stdc++.h>
 	<fstream>
 	<graphics.h>
 	<string>
+	<stdlib.h>
+	<time.h>
 
 1646478089 source:f:\semester03\305_software_project_lab\spl1\infixtopostfix.cpp
 	"header.h"
