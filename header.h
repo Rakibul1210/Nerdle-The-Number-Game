@@ -34,8 +34,7 @@ char checkMouseClick(int x,int y);
 
 bool checkAnswer(char *equation, char *player_input);
 char *getInput();
-char *getInputFromGamPage();
-
+char *getInputFromGamePage();
 
 void gamePage(int answer);
 
