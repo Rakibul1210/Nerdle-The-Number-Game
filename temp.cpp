@@ -5,9 +5,13 @@
 // gonna delete this later
 void temp(){
 
+    char *str = "79-93-44";
+    cout<<"infix: "<<str<<endl;
+    str = infixToPostfix(str);
+    cout<<"postfix: "<<str<<endl;
+    cout<<"value: "<<calculateValue(str)<<endl;
+    exit(2);
 
-    arc(200,200,0,150,50);
-    cout<<"voila"<<endl;
 
 }
 

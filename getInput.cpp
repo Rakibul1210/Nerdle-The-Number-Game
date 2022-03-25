@@ -23,7 +23,7 @@ char *getInput()
 }
 
 
-char *getInputFromGamPage(){
+char *getInputFromGamePage(){
     char *input = new char[1];
     int length=0;
 //    cin>>input;

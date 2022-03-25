@@ -25,7 +25,7 @@ void gamePage(int answer)
     setcolor(WHITE);
     settextstyle(10,0,5);
     outtextxy(580,8,ans);
-
+    cout<<"Answer: "<<answer<<endl;
     ans = numToString(answer);
     cout<<ans<<endl;
     setcolor(WHITE);

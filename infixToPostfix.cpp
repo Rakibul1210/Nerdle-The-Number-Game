@@ -54,7 +54,7 @@ char *infixToPostfix(char* infix)
             //ch=s.stackPop();
             ch = s.stackPop();
             //  Repeatedly popping operators which has higher or same precedence than new one
-            if(checkPrecendence(infix[i]) < checkPrecendence(ch)) //
+            if(checkPrecendence(infix[i]) <= checkPrecendence(ch)) //
             {
                 while((checkPrecendence(infix[i]) <= checkPrecendence(ch)) && (ch != -1))
                 {

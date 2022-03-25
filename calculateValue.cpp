@@ -12,16 +12,16 @@ int calculateValue(char* equation)
         if(equation[i]==' ') // Ignoring spaces
             continue;
 
-        if(isdigit(equation[i])) // isdigit() determines if 0-9
+        if(isdigit(equation[i])) // isDigit() determines if 0-9
         {
             number=0;
-            while(isdigit(equation[i]))// taking bigger multi-digit numberber as integer...
+            while(isdigit(equation[i]))// taking bigger multi-digit number as integer...
             {
                 number=number*10+equation[i]-'0';
                 i++;
             }
 
-            //  Pushing digitnumbe to stack as integer...
+            //  Pushing digitNumber to stack as integer...
             s.stackPush(number);
 
         }
@@ -49,6 +49,7 @@ int calculateValue(char* equation)
                 s.stackPush(pow(a,b));
 
         }
+        //s.printStack();
     }
 
     return s.stackPop();
