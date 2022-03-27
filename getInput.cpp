@@ -63,15 +63,15 @@ char *getInputFromGamePage(){
                         {
                             if(length > 0) // deleting last input
                             {
-                                cout<<"DELETE: ";
-                                cout<<i<<" "<<length<<" - > ";
+                                //cout<<"DELETE: ";
+                               // cout<<i<<" "<<length<<" - > ";
                                 i = i-70;
                                 setcolor(RED);
                                 setfillstyle(SOLID_FILL,RED);
                                 rectangle(450+i,60,510+i,120);
                                 floodfill(451+i,71,RED);
                                 length--;
-                                cout<<i<<" "<<length<<endl;
+                               // cout<<i<<" "<<length<<endl;
 
                                 setcolor(WHITE);
                                 setfillstyle(SOLID_FILL,WHITE);
