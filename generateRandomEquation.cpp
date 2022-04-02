@@ -19,12 +19,12 @@ char* generateRandomEquation(){
 
 }*/
 
-char* generateRandomEquation(){
+char* generateRandomEquation(int rnd_num){
     char *equation= new char[1];
     int random_number,random_operator;
     int i=0;
-
-    srand(time(NULL));
+    //srand(rnd_num);
+    //srand(time(NULL));
 
     while(true)
     {

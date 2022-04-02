@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1646478276 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
+1648879112 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
 	"header.h"
 
-1648216639 source:f:\semester03\305_software_project_lab\spl1\main.cpp
+1648879294 source:f:\semester03\305_software_project_lab\spl1\main.cpp
 	"header.h"
 
-1647125193 f:\semester03\305_software_project_lab\spl1\header.h
+1648878890 f:\semester03\305_software_project_lab\spl1\header.h
 	<bits/stdc++.h>
 	<fstream>
 	<graphics.h>
@@ -41,6 +41,9 @@
 1646480134 source:f:\semester03\305_software_project_lab\spl1\checkanswer&givehint.cpp
 	"header.h"
 
-1648369672 source:f:\semester03\305_software_project_lab\spl1\gamepage.cpp
+1648879965 source:f:\semester03\305_software_project_lab\spl1\gamepage.cpp
+	"header.h"
+
+1648879189 source:f:\semester03\305_software_project_lab\spl1\getequation.cpp
 	"header.h"
 

@@ -9,6 +9,7 @@ bool checkAnswer(char *equation, char *player_input){
         //delay(500);
         if(player_input[i] == equation[i])
         {
+
             cout<<"G";
         }
         else
@@ -32,6 +33,8 @@ bool checkAnswer(char *equation, char *player_input){
         }
     }
     cout<<endl;
+
+
 
     return correct_guess;
 

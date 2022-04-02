@@ -1,3 +1,4 @@
+#pragma once
 #include <bits/stdc++.h>
 #include <fstream>
 #include <graphics.h>
@@ -7,10 +8,8 @@
 
 using namespace std;
 
-#pragma once
-
-char* generateRandomEquation();
-
+char* getValidEquation();
+char* generateRandomEquation(int rnd_num);
 char* infixToPostfix(char* infix);
 int checkPrecendence(char ch);
 int calculateValue(char* equation);
