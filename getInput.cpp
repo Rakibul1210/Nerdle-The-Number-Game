@@ -23,13 +23,11 @@ char *getInput()
 }
 
 
-char *getInputFromGamePage(){
+char *getInputFromGamePage(int no_of_guess,int answer)
+{
     char *input = new char[1];
     int length=0;
-//    cin>>input;
-//    return input;
-    //cout<<"dj"<<endl;
-
+    no_of_guess--;
     bool stringComplete = false;
     char ch;
     char symbol[2];
@@ -68,15 +66,15 @@ char *getInputFromGamePage(){
                                 i = i-70;
                                 setcolor(RED);
                                 setfillstyle(SOLID_FILL,RED);
-                                rectangle(450+i,60,510+i,120);
-                                floodfill(451+i,71,RED);
+                                rectangle(450+i,60+70*no_of_guess,510+i,120+70*no_of_guess);
+                                floodfill(451+i,71+no_of_guess*70,RED);
                                 length--;
                                // cout<<i<<" "<<length<<endl;
 
                                 setcolor(WHITE);
-                                setfillstyle(SOLID_FILL,WHITE);
-                                rectangle(450+i,60,510+i,120);
-                                floodfill(451+i,71,WHITE);
+                                setfillstyle(SOLID_FILL,CYAN);
+                                rectangle(450+i,60+70*no_of_guess,510+i,120+70*no_of_guess);
+                                floodfill(451+i,71+70*no_of_guess,WHITE);
                                 i = i-70;
                                 break;
                             }
@@ -97,7 +95,7 @@ char *getInputFromGamePage(){
                             symbol[0] = ch;
 
                             settextstyle(10,0,5);
-                            outtextxy(466+i,67,symbol);
+                            outtextxy(466+i,67+70*no_of_guess,symbol);
                             break;
                         }
 
@@ -114,6 +112,7 @@ char *getInputFromGamePage(){
             delay(200);
 
         }
+
 
 
     input[length] = '\0';
@@ -167,4 +166,29 @@ char checkMouseClick(int x,int y)
     }
     else
         return 'x';
+}
+
+
+void wrongInput(int no_of_guess)
+{
+    cout<<"dfsjfskjkj"<<endl;
+    no_of_guess--;
+    for(int i=7;i>=0;i--)
+    {
+
+        setcolor(RED);
+        setfillstyle(SOLID_FILL,RED);
+        rectangle(450+70*i,60+70*no_of_guess,510+70*i,120+70*no_of_guess);
+        floodfill(451+70*i,71+70*no_of_guess,RED);
+
+        Sleep(150);
+
+        setcolor(WHITE);
+        setfillstyle(SOLID_FILL,CYAN);
+        rectangle(450+70*i,60+70*no_of_guess,510+70*i,120+70*no_of_guess);
+        floodfill(451+70*i,71+70*no_of_guess,WHITE);
+
+        Sleep(100);
+
+    }
 }

@@ -38,6 +38,7 @@
 		<Unit filename="checkAnswer&amp;GiveHint.cpp" />
 		<Unit filename="gamePage.cpp" />
 		<Unit filename="generateRandomEquation.cpp" />
+		<Unit filename="getEquation.cpp" />
 		<Unit filename="getInput.cpp" />
 		<Unit filename="header.h" />
 		<Unit filename="infixToPostfix.cpp" />

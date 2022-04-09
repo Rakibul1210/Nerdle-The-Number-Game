@@ -4,7 +4,7 @@
 int main()
 {
     char *infix_equation,*postfix_equation = new char[1];
-    int length;
+    //int length;
 
     infix_equation = getValidEquation();
     cout<<"infix equation: "<<infix_equation<<endl;
@@ -13,7 +13,7 @@ int main()
     int answer = calculateValue( postfix_equation );
     cout<<"\tAnswer: "<<answer<<endl;
     //exit(2);
-    length = stringLength(infix_equation);
+//    length = stringLength(infix_equation);
 
     int no_of_guess= 1;
     char *player_input;
@@ -30,8 +30,9 @@ int main()
 
         //from console
         //player_input = getInput();
+
         // from graphics
-        player_input = getInputFromGamePage();
+        player_input = getInputFromGamePage(no_of_guess,answer);
 
         cout<<"input: "<<player_input<<endl;
 
@@ -48,12 +49,13 @@ int main()
             //player_input = infixToPostfix(player_input);
             if( calculateValue( infixToPostfix(player_input) ) != answer)
             {
+                wrongInput(no_of_guess);
                 cout<<"\t!!The Guess doesn't compute "<<answer<<endl;
                 continue;
             }
             else
             {
-                if(checkAnswer(infix_equation,player_input))
+                if(checkAnswer(no_of_guess,infix_equation,player_input))
                 {
                     game_won = true;
                     cout<<endl;

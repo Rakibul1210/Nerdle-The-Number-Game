@@ -1,3 +1,4 @@
+
 #include "header.h"
 
 
@@ -19,4 +20,3 @@ char* getValidEquation()
 
     return equation;
 }
-

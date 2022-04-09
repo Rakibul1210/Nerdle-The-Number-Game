@@ -2,10 +2,10 @@
 1648879112 source:f:\semester03\305_software_project_lab\spl1\generaterandomequation.cpp
 	"header.h"
 
-1648879294 source:f:\semester03\305_software_project_lab\spl1\main.cpp
+1648913037 source:f:\semester03\305_software_project_lab\spl1\main.cpp
 	"header.h"
 
-1648878890 f:\semester03\305_software_project_lab\spl1\header.h
+1648912836 f:\semester03\305_software_project_lab\spl1\header.h
 	<bits/stdc++.h>
 	<fstream>
 	<graphics.h>
@@ -35,15 +35,15 @@
 	"header.h"
 	"mySTL.h"
 
-1648368888 source:f:\semester03\305_software_project_lab\spl1\getinput.cpp
+1648913650 source:f:\semester03\305_software_project_lab\spl1\getinput.cpp
 	"header.h"
 
-1646480134 source:f:\semester03\305_software_project_lab\spl1\checkanswer&givehint.cpp
+1648908833 source:f:\semester03\305_software_project_lab\spl1\checkanswer&givehint.cpp
 	"header.h"
 
-1648879965 source:f:\semester03\305_software_project_lab\spl1\gamepage.cpp
+1648908958 source:f:\semester03\305_software_project_lab\spl1\gamepage.cpp
 	"header.h"
 
-1648879189 source:f:\semester03\305_software_project_lab\spl1\getequation.cpp
+1648889545 source:f:\semester03\305_software_project_lab\spl1\getequation.cpp
 	"header.h"
 

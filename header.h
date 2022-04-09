@@ -29,11 +29,13 @@ void temp();
 char *numToString(int num);
 
 char checkMouseClick(int x,int y);
+void wrongInput(int no_of_guess);
 
+bool checkAnswer(int no_of_guess,char *equation, char *player_input);
+void giveHint(int i,int j,colors color, char ch);
 
-bool checkAnswer(char *equation, char *player_input);
 char *getInput();
-char *getInputFromGamePage();
+char *getInputFromGamePage(int no_of_guess,int answer);
 
 void gamePage(int answer);
 
