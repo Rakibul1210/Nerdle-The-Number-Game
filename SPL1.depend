@@ -47,10 +47,10 @@
 1648889545 source:f:\semester03\305_software_project_lab\spl1\getequation.cpp
 	"header.h"
 
-1653588001 source:d:\spl1\additionalfunctions.cpp
+1653678713 source:d:\spl1\additionalfunctions.cpp
 	"header.h"
 
-1653632811 d:\spl1\header.h
+1653678864 d:\spl1\header.h
 	<bits/stdc++.h>
 	<fstream>
 	<graphics.h>
@@ -71,10 +71,10 @@
 1653509710 d:\spl1\mystl.h
 	"header.h"
 
-1653634175 source:d:\spl1\checkanswer&givehint.cpp
+1653678713 source:d:\spl1\checkanswer&givehint.cpp
 	"header.h"
 
-1653602011 source:d:\spl1\gamepage.cpp
+1653662346 source:d:\spl1\gamepage.cpp
 	"header.h"
 
 1653587542 source:d:\spl1\generaterandomequation.cpp
@@ -83,7 +83,7 @@
 1653509710 source:d:\spl1\getequation.cpp
 	"header.h"
 
-1653600830 source:d:\spl1\getinput.cpp
+1653679584 source:d:\spl1\getinput.cpp
 	"header.h"
 
 1653509710 source:d:\spl1\infixtopostfix.cpp
@@ -107,12 +107,12 @@
 1653561678 source:d:\spl1\gamepage2.cpp
 	"header.h"
 
-1653634025 source:d:\spl1\startgame.cpp
+1653678713 source:d:\spl1\startgame.cpp
 	"header.h"
 
 1653601478 source:d:\spl1\gamefinished.cpp
 	"header.h"
 
-1653633121 source:d:\spl1\choosedifficulty.cpp
+1653677580 source:d:\spl1\choosedifficulty.cpp
 	"header.h"
 

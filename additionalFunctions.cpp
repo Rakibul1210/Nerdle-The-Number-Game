@@ -33,10 +33,6 @@ char* numToString(int num)
         }
 
     }
-//    else if (n<0)
-//    {
-//        cout<<
-//    }
     else
     {
         str[i] = '0';

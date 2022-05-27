@@ -23,10 +23,10 @@ char* generateRandomEquation(int rnd_num);
 char* infixToPostfix(char* infix);
 int checkPrecendence(char ch);
 int calculateValue(char* equation);
+bool validEquation(char *equation);
 
 
-
-// My stack functions
+// My stack function
 void pushStack(int n);
 int popStack();
 void pushStack(char ch);

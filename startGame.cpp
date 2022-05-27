@@ -25,11 +25,10 @@ bool startGame()
     bool game_won = false;
 
     //graphics...............................
-    gamePage(answer, game_won);
-
     int dificulty = chooseDifficulty();
     cout<<"DIFFICULTY: "<<dificulty<<endl;
     gamePage(answer, game_won);
+
 
     while(no_of_guess <7)
     {
@@ -46,7 +45,6 @@ bool startGame()
         cout<<"input: "<<player_input<<endl;
 
 
-        //cout<<stringLength(player_input)<<" "<<stringLength(infix_equation)<<endl;
 
         if(stringLength(player_input) != stringLength(infix_equation))
         {
@@ -55,23 +53,44 @@ bool startGame()
         }
         else
         {
-            //player_input = infixToPostfix(player_input);
-            if( calculateValue( infixToPostfix(player_input) ) != answer)
+            if(dificulty == HARD)
             {
-                wrongInput(no_of_guess);
-                cout<<"\t!!The Guess doesn't compute "<<answer<<endl;
-                continue;
-            }
-            else
-            {
-                if(checkAnswer(no_of_guess,infix_equation,player_input))
+
+                if( calculateValue( infixToPostfix(player_input) ) != answer)
                 {
-                        game_won = true;
-                      return gameEnded(game_won,infix_equation);
-
+                    wrongInput(no_of_guess);
+                    cout<<"\t!!The Guess doesn't compute "<<answer<<endl;
+                    continue;
                 }
+                else
+                {
+                    if(checkAnswer(no_of_guess,infix_equation,player_input))
+                    {
+                        game_won = true;
+                          return gameEnded(game_won,infix_equation);
 
-                no_of_guess++;
+                    }
+
+                    no_of_guess++;
+                }
+            }
+            else if(dificulty == EASY)
+            {
+                if(validEquation(player_input))
+                {
+                    if(checkAnswer(no_of_guess,infix_equation,player_input))
+                    {
+                            game_won = true;
+                            return gameEnded(game_won,infix_equation);
+
+                    }
+                    no_of_guess++;
+                }
+                else
+                {
+                    wrongInput(no_of_guess);
+                    cout<<"\t!!The Guess does n't compute "<<answer<<endl;
+                }
             }
         }
     }

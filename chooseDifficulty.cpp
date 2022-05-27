@@ -3,41 +3,45 @@
 int chooseDifficulty()
 {
 
-    char difficulty[] = "Choose Difficulty ";
+    DWORD screen_width = GetSystemMetrics(SM_CXSCREEN);
+    DWORD screen_height = GetSystemMetrics(SM_CYSCREEN);
+
+    char gameName[] = "Nerdle - The Number Game";
+    char difficulty[] = "Choose Difficulty: ";
 
     char Hard[] = "Hard";
     char Easy[] = "Easy";
 
-    initwindow(415,160, difficulty,517,250);
+    initwindow(screen_width,screen_height, gameName,-3,-3);
 
     setbkcolor(CYAN);
     cleardevice();
 
 
 
-     setcolor(YELLOW);
-     settextstyle(10,0,2);
-     outtextxy(10,10,difficulty);
+     setcolor(WHITE);
+     settextstyle(10,0,5);
+     outtextxy(500,250,difficulty);
 
 
 
 
-    //quit game option
+    //EASY
     setcolor(WHITE);
     setfillstyle(SOLID_FILL,WHITE);
-    rectangle(10,115,119,150);
+    rectangle(500,300,930,350);
 
-    settextstyle(10,0,1);
-    outtextxy(15,124,Easy);
+    settextstyle(10,0,5);
+    outtextxy(660,305,Easy);
 
 
-    //play again
+    //Hard
     setcolor(WHITE);
     setfillstyle(SOLID_FILL,WHITE);
-    rectangle(290,115,410,150);
+    rectangle(500,370,930,420);
 
-    settextstyle(10,0,1);
-    outtextxy(295,123,Hard);
+    settextstyle(10,0,5);
+    outtextxy(660,375,Hard);
 
 
 
@@ -78,12 +82,12 @@ int getDifficulty()
                 cur_y = cursor.y;
 
 
-                if(cur_x > 535 && cur_x < 635 && cur_y > 395 && cur_y < 425)
+                if(cur_x > 500 && cur_x < 950 && cur_y > 300 && cur_y < 350)
                 {
                     difficulty =  1;
                     break;
                 }
-                if(cur_x > 810 && cur_x <  930 && cur_y > 395 && cur_y <425)
+                if(cur_x > 500 && cur_x < 930 && cur_y > 370 && cur_y <420)
                 {
                     difficulty =  2;
                     break;

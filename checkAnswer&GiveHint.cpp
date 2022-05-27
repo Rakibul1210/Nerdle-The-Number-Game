@@ -6,7 +6,6 @@ bool checkAnswer(int no_of_guess, char *equation, char *player_input)
     int n = stringLength(equation);
     cout<<"\t\t\t    ";
 
-
     for(int i=0;i<n;i++)
     {
         //sleep(500);
@@ -53,6 +52,20 @@ bool checkAnswer(int no_of_guess, char *equation, char *player_input)
 
     return correct_guess;
 
+}
+
+bool validEquation(char *equation)
+{
+    int length = stringLength(equation);
+
+    for(int i=0;i<length-1;i++)
+    {
+        if( !isNumber(equation[i]) && !isNumber(equation[i+1]))
+        {
+            return false;
+        }
+    }
+    return true;
 }
 
 void giveHint(int i,int j,colors color,char ch)

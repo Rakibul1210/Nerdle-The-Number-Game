@@ -45,7 +45,7 @@ void gamePage(int answer,bool game_won)
             setcolor(WHITE);
             setfillstyle(SOLID_FILL,WHITE);
             rectangle(450+j,60+i,510+j,120+i);
-            //floodfill(451+j,71+i,WHITE);
+            delay(50);
         }
     }
 
@@ -57,18 +57,15 @@ void gamePage(int answer,bool game_won)
     symbol[0] = '0';
     symbol[1] = '\0';
     int n=0;
+    setcolor(WHITE);
     for(int i=0;i<500;i+=55)
     {
-            setcolor(YELLOW);
-            //setfillstyle(0,WHITE);
             rectangle(450+i,560,500+i,610);
-            //floodfill(451+i,571,WHITE);
 
             settextstyle(10,0,5);
-            //setcolor(RED);
-            symbol[0] = '0'+n;n++;
+            symbol[0] = '0'+n;
+            n++;
             outtextxy(463+i,565,symbol);
-
     }
 
     //plus
@@ -91,20 +88,16 @@ void gamePage(int answer,bool game_won)
     symbol[0] = '/';
     outtextxy(683,625,symbol);
 
-
     //delete
     settextstyle(10,0,1);
     rectangle(725,620,830,670);
     char dlt[] =  "Delete";
     outtextxy(745,635,dlt);
 
-    //delay(500);
-
     //enter
     rectangle(835,620,940,670);
     char enter[] = "Enter";
     outtextxy(858,635,enter);
-
 
     if(game_won)
     {
@@ -115,12 +108,6 @@ void gamePage(int answer,bool game_won)
          outtextxy(858,750,congrats);
          outtextxy(858, 800, playAgain);
          getch();
-
-
     }
 
-
-
-
 }
-

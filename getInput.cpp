@@ -25,7 +25,7 @@ char *getInput()
 
 char *getInputFromGamePage(int no_of_guess,int answer)
 {
-    char *input = new char[1];
+    char *input = new char[100];
     int length=0;
     no_of_guess--;
     bool stringComplete = false;
@@ -116,6 +116,7 @@ char *getInputFromGamePage(int no_of_guess,int answer)
 
 
     input[length] = '\0';
+
     cout<<input<<endl;
     return input;
 
@@ -175,10 +176,10 @@ void wrongInput(int no_of_guess)
     for(int i=7;i>=0;i--)
     {
 
-        setcolor(RED);
-        setfillstyle(SOLID_FILL,RED);
+        setcolor(BLACK);
+        setfillstyle(SOLID_FILL,BLACK);
         rectangle(450+70*i,60+70*no_of_guess,510+70*i,120+70*no_of_guess);
-        floodfill(451+70*i,71+70*no_of_guess,RED);
+        floodfill(451+70*i,71+70*no_of_guess,BLACK);
 
         Sleep(150);
 
