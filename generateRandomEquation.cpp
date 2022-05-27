@@ -29,7 +29,7 @@ char* generateRandomEquation(int rnd_num){
     while(true)
     {
         if(i <= 6){
-            random_number = rand() % 99 +1;
+            random_number = rand() % 19 +1;
         }
         else
             random_number = rand() % 9+1;
@@ -47,13 +47,17 @@ char* generateRandomEquation(int rnd_num){
 
         //operator.....
         if(i <= 6){
-        random_operator = rand() % 3;
+        random_operator = rand() % 4;
         if(random_operator  == 0)
             equation[i++] = '+';
         else if(random_operator == 1)
             equation[i++] = '-';
         else if(random_operator == 2)
             equation[i++] = '*';
+
+//        else if(random_operator == 3){
+//            equation[i++] = '/';
+//        }
         }
         if(i >= 8)
             break;

@@ -6,7 +6,17 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include <conio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 using namespace std;
+
+bool startGame();
+
 
 char* getValidEquation();
 char* generateRandomEquation(int rnd_num);
@@ -37,5 +47,11 @@ void giveHint(int i,int j,colors color, char ch);
 char *getInput();
 char *getInputFromGamePage(int no_of_guess,int answer);
 
-void gamePage(int answer);
+//graphics...
+void gamePage(int answer, bool game_won);
+bool getChoice();
+bool gameEnded(bool game_won, char *equation);
+int chooseDifficulty();
+int getDifficulty();
+
 

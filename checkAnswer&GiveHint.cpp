@@ -5,15 +5,15 @@ bool checkAnswer(int no_of_guess, char *equation, char *player_input)
     bool correct_guess = true;
     int n = stringLength(equation);
     cout<<"\t\t\t    ";
-    char symbol[2];
 
 
     for(int i=0;i<n;i++)
     {
-        //delay(500);
+        //sleep(500);
+        delay(300);
         if(player_input[i] == equation[i])
         {
-            giveHint(no_of_guess-1,i,GREEN,player_input[i]);
+            giveHint(no_of_guess-1,i,LIGHTGREEN,player_input[i]);
             cout<<"G";
             //changeSymbolColor(player_input[i],c)
 

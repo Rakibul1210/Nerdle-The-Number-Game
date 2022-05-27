@@ -36,6 +36,7 @@
 		<Unit filename="additionalFunctions.cpp" />
 		<Unit filename="calculateValue.cpp" />
 		<Unit filename="checkAnswer&amp;GiveHint.cpp" />
+		<Unit filename="gameFinished.cpp" />
 		<Unit filename="gamePage.cpp" />
 		<Unit filename="generateRandomEquation.cpp" />
 		<Unit filename="getEquation.cpp" />
@@ -45,6 +46,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="mySTL.cpp" />
 		<Unit filename="mySTL.h" />
+		<Unit filename="startGame.cpp" />
 		<Unit filename="temp.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

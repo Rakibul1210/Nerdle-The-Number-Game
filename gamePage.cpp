@@ -1,7 +1,10 @@
 #include "header.h"
 
-void gamePage(int answer)
+void gamePage(int answer,bool game_won)
 {
+
+
+
     char symbol[7];
     char temp[10] = "Answer: ";
     char *ans = temp;
@@ -103,9 +106,21 @@ void gamePage(int answer)
     outtextxy(858,635,enter);
 
 
-    //getch();
-    //closegraph();
-    //cout<<"hdhsj"<<endl;
+    if(game_won)
+    {
+         char congrats[] = "congratulations!! You Have won.";
+         char playAgain[] = "Play Again?";
+         setcolor(YELLOW);
+         settextstyle(10,0,5);
+         outtextxy(858,750,congrats);
+         outtextxy(858, 800, playAgain);
+         getch();
+
+
+    }
+
+
+
 
 }
 

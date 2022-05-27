@@ -109,7 +109,7 @@ char *getInputFromGamePage(int no_of_guess,int answer)
             if(stringComplete)
                 break;
 
-            delay(200);
+            delay(50);
 
         }
 
@@ -130,7 +130,7 @@ char checkMouseClick(int x,int y)
     for(int i=450;i<950;i = i+ 55)
     {
 
-        if((x > i && x<i+50 ) && (y>560 && y<610))
+        if((x > i && x<i+50 ) && (y>570 && y<630))
         {
            // cout<<"\t\t\t\t"<<'0'+n<<endl;
 
@@ -138,29 +138,29 @@ char checkMouseClick(int x,int y)
         }
         n++;
     }
-    if((x > 505 && x < 555) && (y > 620 && y < 670))
+    if((x > 505 && x < 555) && (y > 630 && y < 690))
     {
        // cout<<"\t\t\t\t\t+"<<endl;
         return '+';
 
     }
-    else if((x>560 && x<610) && (y>620 && y<670))
+    else if((x>560 && x<610) && (y>630 && y<690))
     {
         return '-';
     }
-    else if((x>615 && x<665) && (y>620 && y<670))
+    else if((x>615 && x<665) && (y>630 && y<690))
     {
         return '*';
     }
-    else if((x>670 && x<720) && (y>620 && y<670))
+    else if((x>670 && x<720) && (y>630 && y<690))
     {
         return '/';
     }
-    else if((x>725 && x<830) && (y>620 && y<670))
+    else if((x>725 && x<830) && (y>630 && y<690))
     {
         return 'd';
     }
-    else if((x>835 && x<940) && (y>620 && y<670))
+    else if((x>835 && x<940) && (y>630 && y<690))
     {
         return 'e';
     }
@@ -171,7 +171,6 @@ char checkMouseClick(int x,int y)
 
 void wrongInput(int no_of_guess)
 {
-    cout<<"dfsjfskjkj"<<endl;
     no_of_guess--;
     for(int i=7;i>=0;i--)
     {
