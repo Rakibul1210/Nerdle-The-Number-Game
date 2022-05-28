@@ -33,9 +33,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Equation.txt" />
+		<Unit filename="account.h" />
 		<Unit filename="additionalFunctions.cpp" />
 		<Unit filename="calculateValue.cpp" />
 		<Unit filename="checkAnswer&amp;GiveHint.cpp" />
+		<Unit filename="chooseDifficulty.cpp" />
 		<Unit filename="gameFinished.cpp" />
 		<Unit filename="gamePage.cpp" />
 		<Unit filename="generateRandomEquation.cpp" />
@@ -43,9 +45,12 @@
 		<Unit filename="getInput.cpp" />
 		<Unit filename="header.h" />
 		<Unit filename="infixToPostfix.cpp" />
+		<Unit filename="loginMenu.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="mySTL.cpp" />
 		<Unit filename="mySTL.h" />
+		<Unit filename="playerProfile.cpp" />
+		<Unit filename="singIn.cpp" />
 		<Unit filename="startGame.cpp" />
 		<Unit filename="temp.cpp" />
 		<Extensions>

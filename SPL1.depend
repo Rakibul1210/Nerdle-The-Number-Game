@@ -50,8 +50,9 @@
 1653678713 source:d:\spl1\additionalfunctions.cpp
 	"header.h"
 
-1653678864 d:\spl1\header.h
+1653737827 d:\spl1\header.h
 	<bits/stdc++.h>
+	<dirent.h>
 	<fstream>
 	<graphics.h>
 	<string>
@@ -74,7 +75,7 @@
 1653678713 source:d:\spl1\checkanswer&givehint.cpp
 	"header.h"
 
-1653662346 source:d:\spl1\gamepage.cpp
+1653728364 source:d:\spl1\gamepage.cpp
 	"header.h"
 
 1653587542 source:d:\spl1\generaterandomequation.cpp
@@ -90,8 +91,9 @@
 	"header.h"
 	"mySTL.h"
 
-1653601678 source:d:\spl1\main.cpp
+1653757351 source:d:\spl1\main.cpp
 	"header.h"
+	"account.h"
 
 1653509710 source:d:\spl1\mystl.cpp
 	"header.h"
@@ -107,12 +109,45 @@
 1653561678 source:d:\spl1\gamepage2.cpp
 	"header.h"
 
-1653678713 source:d:\spl1\startgame.cpp
+1653729506 source:d:\spl1\startgame.cpp
 	"header.h"
 
 1653601478 source:d:\spl1\gamefinished.cpp
 	"header.h"
 
-1653677580 source:d:\spl1\choosedifficulty.cpp
+1653729773 source:d:\spl1\choosedifficulty.cpp
+	"header.h"
+
+1653757390 d:\spl1\account.h
+	<bits/stdc++.h>
+	<iostream>
+	<fstream>
+	<string>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<conio.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1653751826 d:\spl1\playerprofile.cpp
+	"header.h"
+	"account.h"
+	<dirent.h>
+
+1653755502 source:d:\spl1\playerprofile.cpp
+	"header.h"
+	"account.h"
+	<dirent.h>
+
+1653764015 source:d:\spl1\loginmenu.cpp
+	"account.h"
+
+1653757618 source:d:\spl1\singin.cpp
+	"account.h"
 	"header.h"
 

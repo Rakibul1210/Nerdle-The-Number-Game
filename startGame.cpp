@@ -7,8 +7,6 @@
 bool startGame()
 {
 
-
-
     char *infix_equation,*postfix_equation = new char[1];
 
 
@@ -82,6 +80,7 @@ bool startGame()
                     {
                             game_won = true;
                             return gameEnded(game_won,infix_equation);
+
 
                     }
                     no_of_guess++;

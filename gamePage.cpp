@@ -99,15 +99,15 @@ void gamePage(int answer,bool game_won)
     char enter[] = "Enter";
     outtextxy(858,635,enter);
 
-    if(game_won)
-    {
-         char congrats[] = "congratulations!! You Have won.";
-         char playAgain[] = "Play Again?";
-         setcolor(YELLOW);
-         settextstyle(10,0,5);
-         outtextxy(858,750,congrats);
-         outtextxy(858, 800, playAgain);
-         getch();
-    }
+//    if(game_won)
+//    {
+//         char congrats[] = "congratulations!! You Have won.";
+//         char playAgain[] = "Play Again?";
+//         setcolor(YELLOW);
+//         settextstyle(10,0,5);
+//         outtextxy(858,750,congrats);
+//         outtextxy(858, 800, playAgain);
+//         getch();
+//    }
 
 }

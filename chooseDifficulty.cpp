@@ -3,6 +3,7 @@
 int chooseDifficulty()
 {
 
+    cout<<"\n\n\nwe are at choose difficulty function\n\n\n"<<endl;
     DWORD screen_width = GetSystemMetrics(SM_CXSCREEN);
     DWORD screen_height = GetSystemMetrics(SM_CYSCREEN);
 
@@ -44,7 +45,7 @@ int chooseDifficulty()
     outtextxy(660,375,Hard);
 
 
-
+    delay(500);
     int difclty =  getDifficulty();
     cout<<"hehehe"<<endl;
     closegraph();
