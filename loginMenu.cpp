@@ -1,23 +1,24 @@
 #include "account.h"
 
-Player* loginMenu()
+Player loginMenu(Player player)
 {
-    struct Player *player;
+    //Player *player = (Player*)malloc(sizeof(Player));
 
     int choice ;
-    cout<<"[1] Login"<<endl;
-    cout<<"[2] Sign In"<<endl;
+    cout<<"\t\t[1] Login"<<endl;
+    cout<<"\t\t[2] Sign In"<<endl;
+    cout<<"\t\t:";
     cin>>choice;
+    getchar();
 
-    if(choice == 1)
-    {
-        player = login();
-    }
-    else if (choice == 2)
-    {
-        player = singIn();
-    }
-
+     if(choice == 1)
+     {
+        player = login(player);
+     }
+     if(choice == 2)
+     {
+        player = singIn(player);
+     }
 
 
 

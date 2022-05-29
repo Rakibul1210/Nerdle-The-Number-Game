@@ -30,9 +30,9 @@ struct Player{
 
 
 
-Player* loginMenu();
-struct Player* login();
-struct Player* singIn();
+Player loginMenu(Player Player);
+Player login(Player player);
+Player singIn(Player player);
 
 //console graphics...
 void gotoxy(int x, int y);

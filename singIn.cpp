@@ -1,18 +1,17 @@
 #include "account.h"
 #include "header.h"
 
-Player* singIn()
+Player singIn(Player player)
 {
 
     DIR *directory;
     struct dirent *file;
 
-    char  path[100] = "D:\\SPL1\\Nerdle";
+    char path[100] = "D:\\SPL1\\Nerdle";
     string userName;
     string password;
 
 
-    Player *p = (Player*)malloc(sizeof(Player));
     cout<<"\t\t------------SingIN-------------------"<<endl;
 
 
@@ -26,14 +25,14 @@ Player* singIn()
 
     cout<<endl;
 
-    p->name = userName;
-    p->password = password;
+    player.name = userName;
+    player.password = password;
 
 
     bool userExist= false;
     userName = userName + ".txt";
 
-    if((directory = opendir("D:\\SPL1\\Nerdle")) != NULL)
+    if((directory = opendir(path)) != NULL)
     {
           while( (file = readdir(directory)) != NULL)
           {
@@ -54,7 +53,7 @@ Player* singIn()
     userName = "D:\\SPL1\\Nerdle\\" + userName;
     if(userExist)
     {
-        cout<<"User name \""<<p->name<<"\" taken.\nTry another one"<<endl;
+        cout<<"User name \""<<player.name<<"\" taken.\nTry another one"<<endl;
     }
     else
     {
@@ -62,8 +61,8 @@ Player* singIn()
         cout<<"File location: "<<userName<<endl;
         ofstream myFile;
         myFile.open(userName);
-        myFile<<p->name<<endl;
-        myFile<<p->password<<endl;
+        myFile<<player.name<<endl;
+        myFile<<player.password<<endl;
         // other thing to be written....
 
         myFile.close();
@@ -71,10 +70,14 @@ Player* singIn()
 
     }
 
+     cout<<"In sign in function: "<<endl;
+     cout<<player.name<<endl;
+     cout<<player.password<<endl;
+     cout<<endl;
 
 
 
-    return p;
+    return player;
 
 
 }

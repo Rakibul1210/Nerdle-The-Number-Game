@@ -5,9 +5,10 @@
 using namespace std;
 
 
-Player* login()
+Player login(Player player)
 {
 
+    //Player *player = (Player*)malloc(sizeof(Player));
     DIR *directory;
     struct dirent *file;
     char path[100] = "D:\\SPL1\\Nerdle";
@@ -49,20 +50,40 @@ Player* login()
         mkdir(path);
     }
 
-    //cout reslut
-    Player *player;
+
+
+    string doubleSlash = "\\";
+    userName = path+ doubleSlash + userName;
+
     if(registered)
     {
 
-        ifstream playerFile;
-        playerFile.open(userName);
-        playerFile>>player->name>>endl;
-        playerFile>>player->password>>endl;
+        string str;
+        string str2;
+
+
+        ifstream playerFile(userName);
+        //playerFile.open(userName);
+
+
+        getline(playerFile,str);
+        cout<<str<<"|"<<endl;
+
+        player.name = str;
+
+        cout<<player.name<<endl;
+
+        getline(playerFile,str2);
+
+        player.password = str2;
+        cout<<player.password<<"|"<<endl;
+
+
 
         //other things.....
 
 
-        playerFile.close();
+        //playerFile.close();
 
         cout<<"Login Successful."<<endl;
 
@@ -70,8 +91,20 @@ Player* login()
     else
     {
         cout<<"Account not registered. Register first."<<endl;
-        return ;
+        return player;
     }
+
+//    int i=0;
+//    while(player->name)
+//    {
+//        i++;
+//    }
+
+     cout<<"\tIn login function: "<<endl;
+     cout<<player.name<<endl;
+     cout<<player.password<<endl;
+     cout<<endl;
+
 
 
 
