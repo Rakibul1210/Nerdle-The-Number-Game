@@ -30,7 +30,7 @@ bool gameEnded(bool game_won, char *equation)
     else
     {
         //cout<<"##########################################3"<<endl;
-        setcolor(BLACK);
+        setcolor(YELLOW);
          char losingMessage[100] = "You lost. Nerdle: ";
          strcat(losingMessage, equation);
 
@@ -48,12 +48,13 @@ bool gameEnded(bool game_won, char *equation)
     setfillstyle(SOLID_FILL,WHITE);
     rectangle(10,115,119,150);
 
+    //
     settextstyle(10,0,1);
     outtextxy(15,124,quitGame);
 
 
     //play again
-    setcolor(WHITE);
+    setcolor(YELLOW);
     setfillstyle(SOLID_FILL,WHITE);
     rectangle(290,115,410,150);
 

@@ -3,7 +3,7 @@
 int chooseDifficulty()
 {
 
-    cout<<"\n\n\nwe are at choose difficulty function\n"<<endl;
+    //cout<<"\n\n\nwe are at choose difficulty function\n"<<endl;
     DWORD screen_width = GetSystemMetrics(SM_CXSCREEN);
     DWORD screen_height = GetSystemMetrics(SM_CYSCREEN);
     char welcome[] = "Nerdle - The Number game";

@@ -1,5 +1,4 @@
 #include "header.h"
-#include "account.h"
 
 int main()
 {
@@ -9,7 +8,7 @@ int main()
 
             play = startGame();
 
-            cout<<"A game has ended"<<endl;
+            //cout<<"A game has ended"<<endl;
 
         }
 

@@ -179,10 +179,10 @@
 1653870467 source:f:\spl1_instruction\checkanswer&givehint.cpp
 	"header.h"
 
-1653868471 source:f:\spl1_instruction\choosedifficulty.cpp
+1653883558 source:f:\spl1_instruction\choosedifficulty.cpp
 	"header.h"
 
-1653869430 source:f:\spl1_instruction\gamefinished.cpp
+1653871854 source:f:\spl1_instruction\gamefinished.cpp
 	"header.h"
 
 1653866953 source:f:\spl1_instruction\gamepage.cpp
@@ -197,7 +197,7 @@
 1653679584 source:f:\spl1_instruction\getinput.cpp
 	"header.h"
 
-1653509710 source:f:\spl1_instruction\infixtopostfix.cpp
+1653890480 source:f:\spl1_instruction\infixtopostfix.cpp
 	"header.h"
 	"mySTL.h"
 
@@ -220,9 +220,8 @@
 	<stdlib.h>
 	<windows.h>
 
-1653871176 source:f:\spl1_instruction\main.cpp
+1653900439 source:f:\spl1_instruction\main.cpp
 	"header.h"
-	"account.h"
 
 1653509710 source:f:\spl1_instruction\mystl.cpp
 	"header.h"
@@ -237,7 +236,7 @@
 	"account.h"
 	"header.h"
 
-1653869430 source:f:\spl1_instruction\startgame.cpp
+1653871917 source:f:\spl1_instruction\startgame.cpp
 	"header.h"
 
 1653566221 source:f:\spl1_instruction\temp.cpp

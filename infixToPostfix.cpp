@@ -62,6 +62,10 @@ char *infixToPostfix(char* infix)
                     postfix[pl++] = ' ';
                     ch=s.stackPop();
                 }
+                if(ch != -1)
+                {
+                    s.stackPush(ch);
+                }
                 s.stackPush(infix[i]);
             }
             else        // if new operator has lower precedence simply push it to stack
