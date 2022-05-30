@@ -11,7 +11,7 @@ bool startGame()
 
 
     infix_equation = getValidEquation();
-    cout<<"infix equation: "<<infix_equation<<endl;
+    cout<<"\tinfix equation: "<<infix_equation<<endl;
     postfix_equation = infixToPostfix( infix_equation );
 
     int answer = calculateValue( postfix_equation );

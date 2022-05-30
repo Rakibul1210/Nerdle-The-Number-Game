@@ -52,7 +52,6 @@
 		<Unit filename="playerProfile.cpp" />
 		<Unit filename="singIn.cpp" />
 		<Unit filename="startGame.cpp" />
-		<Unit filename="temp.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

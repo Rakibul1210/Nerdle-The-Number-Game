@@ -12,7 +12,7 @@ bool gameEnded(bool game_won, char *equation)
     }
     else
     {
-        initwindow(400,150, "You Lose",550,300);
+        initwindow(415,160, "You Lose",517,250);
     }
 
     setbkcolor(CYAN);
@@ -29,20 +29,22 @@ bool gameEnded(bool game_won, char *equation)
     }
     else
     {
-         char losingMessage[100] = "You lost. Equation: ";
+        //cout<<"##########################################3"<<endl;
+        setcolor(BLACK);
+         char losingMessage[100] = "You lost. Nerdle: ";
          strcat(losingMessage, equation);
 
 
-         settextstyle(10,0,3);
-         outtextxy(575,350,losingMessage);
+         settextstyle(10,0,2);
+         outtextxy(10,10,losingMessage);
 
     }
+    //delay(5000);
     outtextxy(10, 40, playAgain);
 
     playAgain[strlen(playAgain) - 1] = '\0';
 
     //quit game option
-    setcolor(WHITE);
     setfillstyle(SOLID_FILL,WHITE);
     rectangle(10,115,119,150);
 

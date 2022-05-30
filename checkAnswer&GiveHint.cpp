@@ -57,6 +57,10 @@ bool checkAnswer(int no_of_guess, char *equation, char *player_input)
 bool validEquation(char *equation)
 {
     int length = stringLength(equation);
+    if((!isNumber(equation[0])) || (!isNumber(equation[length-1])) )
+    {
+        return false;
+    }
 
     for(int i=0;i<length-1;i++)
     {

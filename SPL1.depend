@@ -151,3 +151,96 @@
 	"account.h"
 	"header.h"
 
+1653678713 source:f:\spl1_instruction\additionalfunctions.cpp
+	"header.h"
+
+1653737827 f:\spl1_instruction\header.h
+	<bits/stdc++.h>
+	<dirent.h>
+	<fstream>
+	<graphics.h>
+	<string>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<stdio.h>
+	<stdlib.h>
+
+1653509710 source:f:\spl1_instruction\calculatevalue.cpp
+	"header.h"
+	"mySTL.h"
+
+1653509710 f:\spl1_instruction\mystl.h
+	"header.h"
+
+1653870467 source:f:\spl1_instruction\checkanswer&givehint.cpp
+	"header.h"
+
+1653868471 source:f:\spl1_instruction\choosedifficulty.cpp
+	"header.h"
+
+1653869430 source:f:\spl1_instruction\gamefinished.cpp
+	"header.h"
+
+1653866953 source:f:\spl1_instruction\gamepage.cpp
+	"header.h"
+
+1653587542 source:f:\spl1_instruction\generaterandomequation.cpp
+	"header.h"
+
+1653509710 source:f:\spl1_instruction\getequation.cpp
+	"header.h"
+
+1653679584 source:f:\spl1_instruction\getinput.cpp
+	"header.h"
+
+1653509710 source:f:\spl1_instruction\infixtopostfix.cpp
+	"header.h"
+	"mySTL.h"
+
+1653778993 source:f:\spl1_instruction\loginmenu.cpp
+	"account.h"
+
+1653778993 f:\spl1_instruction\account.h
+	<bits/stdc++.h>
+	<iostream>
+	<fstream>
+	<string>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<conio.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1653871176 source:f:\spl1_instruction\main.cpp
+	"header.h"
+	"account.h"
+
+1653509710 source:f:\spl1_instruction\mystl.cpp
+	"header.h"
+	"mySTL.h"
+
+1653778393 source:f:\spl1_instruction\playerprofile.cpp
+	"header.h"
+	"account.h"
+	<dirent.h>
+
+1653779002 source:f:\spl1_instruction\singin.cpp
+	"account.h"
+	"header.h"
+
+1653869430 source:f:\spl1_instruction\startgame.cpp
+	"header.h"
+
+1653566221 source:f:\spl1_instruction\temp.cpp
+	"header.h"
+	"mySTL.h"
+

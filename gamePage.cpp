@@ -6,7 +6,7 @@ void gamePage(int answer,bool game_won)
 
 
     char symbol[7];
-    char temp[10] = "Answer: ";
+    char temp[10] = "Nerdle: ";
     char *ans = temp;
     DWORD screen_width = GetSystemMetrics(SM_CXSCREEN);
     DWORD screen_height = GetSystemMetrics(SM_CYSCREEN);
